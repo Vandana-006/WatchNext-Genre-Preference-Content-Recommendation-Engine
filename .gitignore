@@ -1,0 +1,46 @@
+
+# Dependencies
+**/node_modules/
+
+# Build outputs
+**/dist/
+**/target/
+
+# Environment variables and secrets
+**/.env
+**/.env.*
+**/*secrets*
+**/*credentials*
+
+# Local configuration
+**/application-local.properties
+**/application-secrets.properties
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# IDE files
+.idea/
+.vscode/
+
+# Temporary project backups
+**/*.before-*.jsx
+**/*.backup
+
+# Local startup logs
+backend/startup-error.txt
+backend/startup-log.txt
+
+# Accidental duplicate frontend files inside backend
+/backend/src/app.css
+/backend/src/app.jsx
+/backend/src/index.css
+/backend/src/main.jsx
+/backend/src/pages/
+
+# Accidental nested Maven project
+/backend/src/test/java/com/watchnext/backend/
+
+# Accidental root source copy
+/src/

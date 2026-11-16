@@ -1,0 +1,13 @@
+package com.watchnext.repository;
+
+import com.watchnext.entity.PreferredGenre;
+import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
+
+public interface PreferredGenreRepository
+        extends JpaRepository<PreferredGenre, Long> {
+
+    List<PreferredGenre> findByUser_Id(Long userId);
+
+    void deleteByUser_Id(Long userId);
+}

@@ -1,0 +1,184 @@
+
+.welcome-page {
+  min-height: 100vh;
+  padding: 0 7%;
+  color: #f5f3ff;
+  background:
+    radial-gradient(ellipse at 15% 35%, #32145b 0%, transparent 45%),
+    radial-gradient(ellipse at 85% 65%, #122047 0%, transparent 40%),
+    #080914;
+  font-family: "DM Sans", Arial, sans-serif;
+}
+
+.topbar {
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ffffff18;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.brand svg, .brand span { color: #a78bfa; }
+
+.nav-button {
+  background: #8b5cf622;
+  color: white;
+  border: 1px solid #8b5cf6;
+  padding: 11px 24px;
+  border-radius: 9px;
+}
+
+.welcome-layout {
+  min-height: 690px;
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  align-items: center;
+  gap: 65px;
+}
+
+.eyebrow {
+  color: #bda4ff;
+  letter-spacing: 2px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.hero-content h1 {
+  font-size: clamp(46px, 5.5vw, 76px);
+  line-height: 1.08;
+  letter-spacing: -3px;
+}
+
+.hero-content h1 span {
+  color: #a78bfa;
+  text-shadow: 0 0 35px #8b5cf655;
+}
+
+.hero-content p {
+  max-width: 430px;
+  color: #aaa7bb;
+  line-height: 1.9;
+  margin: 25px 0;
+}
+
+.primary-button, .submit-button {
+  border: 0;
+  border-radius: 10px;
+  background: linear-gradient(110deg, #9464f8, #6032c5);
+  color: white;
+  font-weight: 700;
+  padding: 15px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  box-shadow: 0 8px 30px #713bce44;
+}
+
+.login-panel {
+  padding: 38px;
+  border: 1px solid #a78bfa45;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #1b1730, #10101e);
+  box-shadow: 0 20px 70px #0008;
+}
+
+.panel-icon {
+  color: #c5aaff;
+  background: #8b5cf628;
+  padding: 13px;
+  display: inline-flex;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.login-panel h2 { font-size: 30px; }
+.login-panel > p { color: #9994aa; margin: 10px 0 25px; font-size: 13px; }
+
+.auth-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4px;
+  background: #080914;
+  border-radius: 9px;
+  margin-bottom: 24px;
+}
+
+.auth-tabs button {
+  border: 0;
+  padding: 12px;
+  color: #aaa5b8;
+  background: transparent;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.auth-tabs button.active {
+  background: #7950d4;
+  color: white;
+}
+
+.login-panel form { display: grid; gap: 17px; }
+
+.login-panel form > input, .password-field input {
+  height: 48px;
+  width: 100%;
+  background: #090916;
+  border: 1px solid #ffffff20;
+  border-radius: 9px;
+  padding: 0 14px;
+  color: white;
+  outline: none;
+}
+
+.login-panel input:focus { border-color: #a78bfa; }
+
+.password-field { position: relative; }
+
+.password-field button {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  color: #aaa;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.password-field svg { width: 19px; }
+
+.submit-button { width: 100%; margin-top: 5px; }
+
+.secure-note {
+  text-align: center;
+  color: #938ca6;
+  font-size: 10px;
+  margin-top: 25px;
+}
+
+@media(max-width: 850px) {
+  .welcome-layout {
+    grid-template-columns: 1fr;
+    padding: 55px 0;
+    gap: 45px;
+  }
+}
+
+@media(max-width: 500px) {
+  .welcome-page { padding: 0 5%; }
+  .hero-content h1 { font-size: 45px; }
+  .login-panel { padding: 25px 18px; }
+}
