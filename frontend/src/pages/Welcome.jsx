@@ -1,4 +1,4 @@
-﻿
+
 import { useRef, useState } from "react";
 import {
   Clapperboard,
@@ -152,7 +152,7 @@ const handleSubmit = async (event) => {
         </a>
 
         <p className="brand-tagline">
-          Discover <span>â€¢</span> Stream <span>â€¢</span> Enjoy
+          Discover <span>•</span> Stream <span>•</span> Enjoy
         </p>
 
         <div className="header-caption">
@@ -387,7 +387,7 @@ onChange={(event) => setPassword(event.target.value)}
 
       <footer className="welcome-footer">
         <span>âœ¦</span> MADE FOR MOVIE LOVERS
-        <span className="footer-separator">â€¢</span>
+        <span className="footer-separator">•</span>
         POWERED BY YOUR TASTE <span>âœ¦</span>
       </footer>
     </main>
