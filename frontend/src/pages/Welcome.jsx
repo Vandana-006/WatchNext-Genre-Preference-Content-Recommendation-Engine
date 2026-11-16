@@ -152,7 +152,7 @@ const handleSubmit = async (event) => {
         </a>
 
         <p className="brand-tagline">
-          Discover <span>•</span> Stream <span>•</span> Enjoy
+          Discover <span>&#8226;</span> Stream <span>&#8226;</span> Enjoy
         </p>
 
         <div className="header-caption">
